@@ -2,7 +2,8 @@ import { diff,
 	isWord,
 	pow,
 	getDayOfWeek,
-	MinPass } from "./second-part";
+	MinPass,
+	compareBirthDates } from "./second-part";
 
 // 1 задание
 
@@ -90,4 +91,16 @@ test('прошло минут с начала дня', () => {
     
 	// Вызываем функцию и проверяем результат
 	expect(MinPass()).toBe(expectedMinutesPassed);
+});
+
+// 6 задание
+
+test('Сравнение дат рождения', () => {
+	expect(compareBirthDates("05.05.2000", "05.05.2000")).toBe("Оба пользователя родились в одинаковый день.");
+	expect(compareBirthDates("06.05.2000", "05.05.2000")).toBe("Первый пользователь моложе второго.");
+	expect(compareBirthDates("04.05.2000", "05.05.2000")).toBe("Второй пользователь моложе первого.");
+	expect(compareBirthDates("05.06.2000", "05.05.2000")).toBe("Первый пользователь моложе второго.");
+	expect(compareBirthDates("05.05.2000", "05.06.2000")).toBe("Второй пользователь моложе первого.");
+	expect(compareBirthDates("05.05.2001", "05.05.2000")).toBe("Первый пользователь моложе второго.");
+	expect(compareBirthDates("05.05.2000", "05.05.2001")).toBe("Второй пользователь моложе первого.");
 });
