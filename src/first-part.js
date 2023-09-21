@@ -99,3 +99,14 @@ export function getMonthName() {
 		break;
 	}
 }
+
+/* 6. В переменных circle и square хранятся площади круга и квадрата соответственно.
+  Написать программу, которая определяет, поместится ли круг в квадрат. */
+
+export function checkCircleInSquare(circle, square) {
+	if (circle <= square) {
+		return "Круг поместится в квадрате";
+	} 
+	return "Круг не поместится в квадрате";
+    
+};

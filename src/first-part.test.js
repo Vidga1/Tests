@@ -2,7 +2,8 @@ import { multiplyAndSum,
 	countTotalCharacters,
 	sumOfDigits,
 	findMax,
-	getMonthName } from "./first-part";
+	getMonthName,
+	checkCircleInSquare } from "./first-part";
 
 // 1 задание
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
@@ -174,4 +175,14 @@ describe("getMonthName", () => {
 		getMonthName();
 		expect(consoleSpy).toHaveBeenCalledWith("Некорректное число");
 	});
+});
+
+// 6 задание
+
+test('Круг поместится в квадрате', () => {
+	expect(checkCircleInSquare(10, 20)).toBe("Круг поместится в квадрате");
+});
+  
+test('Круг не поместится в квадрате', () => {
+	expect(checkCircleInSquare(30, 20)).toBe("Круг не поместится в квадрате");
 });
