@@ -1,6 +1,7 @@
 import { multiplyAndSum,
 	countTotalCharacters,
-	sumOfDigits } from "./first-part";
+	sumOfDigits,
+	findMax } from "./first-part";
 
 // 1 задание
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
@@ -49,5 +50,19 @@ describe("sumOfDigits", () => {
   
 		expect(mockPrompt).toHaveBeenCalledTimes(1);
 		expect(mockConsoleLog).toHaveBeenCalledWith("Вы ввели неверное число!");
+	});
+});
+
+// 4 задание
+describe('findMax', () => {
+	it('если первое число больше второго числа', () => {
+		const mockConsoleLog = jest.spyOn(console, 'log');
+		findMax(5, 3);
+		expect(mockConsoleLog).toHaveBeenCalledWith(5);
+	});
+	it('если второе число больше первого числа', () => {
+		const mockConsoleLog = jest.spyOn(console, 'log');
+		findMax(2, 4);
+		expect(mockConsoleLog).toHaveBeenCalledWith(4);
 	});
 });

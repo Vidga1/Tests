@@ -40,3 +40,14 @@ export function sumOfDigits() {
   
 	window.console.log("Сумма цифр введенного числа:", sum);
 }
+
+/* 4. В переменных a и b хранятся числа. Вывести в
+консоль наибольшее из них. */
+
+export function findMax(a, b) {
+	if (a > b) {
+		window.console.log(a);
+	} else {
+		window.console.log(b);
+	}
+}
