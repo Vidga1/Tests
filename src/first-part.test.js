@@ -3,7 +3,8 @@ import { multiplyAndSum,
 	sumOfDigits,
 	findMax,
 	getMonthName,
-	checkCircleInSquare } from "./first-part";
+	checkCircleInSquare,
+	calculateSum } from "./first-part";
 
 // 1 задание
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
@@ -185,4 +186,12 @@ test('Круг поместится в квадрате', () => {
   
 test('Круг не поместится в квадрате', () => {
 	expect(checkCircleInSquare(30, 20)).toBe("Круг не поместится в квадрате");
+});
+
+// 7 задание
+
+test('сумма чисел от 50 до 100 равна 3825', () => {
+	const consoleLogSpy = jest.spyOn(console, 'log');
+	calculateSum();
+	expect(consoleLogSpy).toHaveBeenCalledWith(3825);
 });
