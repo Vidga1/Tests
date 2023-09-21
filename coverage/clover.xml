@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695317223595" clover="3.2.0">
-  <project timestamp="1695317223595" name="All files">
-    <metrics statements="149" coveredstatements="149" conditionals="30" coveredconditionals="30" methods="8" coveredmethods="8" elements="187" coveredelements="187" complexity="0" loc="149" ncloc="149" packages="1" files="2" classes="2"/>
+<coverage generated="1695317520285" clover="3.2.0">
+  <project timestamp="1695317520285" name="All files">
+    <metrics statements="156" coveredstatements="156" conditionals="32" coveredconditionals="32" methods="9" coveredmethods="9" elements="197" coveredelements="197" complexity="0" loc="156" ncloc="156" packages="1" files="2" classes="2"/>
     <file name="dom.js" path="C:\Users\Loki\Desktop\OTUS\Repositories\Tests\src\dom.js">
       <metrics statements="28" coveredstatements="28" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -34,7 +34,7 @@
       <line num="28" count="4" type="stmt"/>
     </file>
     <file name="first-part.js" path="C:\Users\Loki\Desktop\OTUS\Repositories\Tests\src\first-part.js">
-      <metrics statements="121" coveredstatements="121" conditionals="24" coveredconditionals="24" methods="7" coveredmethods="7"/>
+      <metrics statements="128" coveredstatements="128" conditionals="26" coveredconditionals="26" methods="8" coveredmethods="8"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
@@ -156,6 +156,13 @@
       <line num="119" count="51" type="stmt"/>
       <line num="120" count="1" type="stmt"/>
       <line num="121" count="1" type="stmt"/>
+      <line num="122" count="1" type="stmt"/>
+      <line num="123" count="1" type="stmt"/>
+      <line num="124" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="125" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="126" count="10" type="stmt"/>
+      <line num="127" count="10" type="stmt"/>
+      <line num="128" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

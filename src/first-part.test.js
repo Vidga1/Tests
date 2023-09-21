@@ -5,7 +5,8 @@ import { multiplyAndSum,
 	getMonthName,
 	checkCircleInSquare,
 	calculateSum,
-	printMultiplicationTable } from "./first-part";
+	printMultiplicationTable,
+	sumOddNumbers } from "./first-part";
 
 // 1 задание
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
@@ -212,4 +213,15 @@ test('таблица умножения на 7', () => {
 	expect(consoleLogSpy).toHaveBeenCalledWith("8 x 7 = 56");
 	expect(consoleLogSpy).toHaveBeenCalledWith("9 x 7 = 63");
 	expect(consoleLogSpy).toHaveBeenCalledWith("10 x 7 = 70");
+});
+
+// 9 задание
+
+test("сумма нечетных чисел", () => {
+	window.prompt = jest.fn().mockReturnValueOnce("12")
+	const consoleLogSpy = jest.spyOn(console, "log");
+	sumOddNumbers();
+	expect(consoleLogSpy).toHaveBeenCalledWith(
+		"Сумма всех нечётных чисел от 1 до 12 равна 36",
+	);
 });
