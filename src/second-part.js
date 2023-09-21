@@ -46,3 +46,15 @@ export function getDayOfWeek() {
 	];
 	return daysOfWeek[date.getDay()];
 }
+
+/* 5. Написать программу, которая выводит в консоль
+количество минут, прошедшее с начала сегодняшнего
+дня */
+
+export function MinPass() {
+	const now = new Date();
+	const hrs = now.getHours();
+	const mins = now.getMinutes();
+	const minutesPassed = hrs * 60 + mins;
+	return minutesPassed
+}
