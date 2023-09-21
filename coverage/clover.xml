@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695333111594" clover="3.2.0">
-  <project timestamp="1695333111594" name="All files">
+<coverage generated="1695333359167" clover="3.2.0">
+  <project timestamp="1695333359167" name="All files">
     <metrics statements="394" coveredstatements="394" conditionals="70" coveredconditionals="70" methods="26" coveredmethods="26" elements="490" coveredelements="490" complexity="0" loc="394" ncloc="394" packages="1" files="3" classes="3"/>
     <file name="dom.js" path="C:\Users\Loki\Desktop\OTUS\Repositories\Tests\src\dom.js">
       <metrics statements="28" coveredstatements="28" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
