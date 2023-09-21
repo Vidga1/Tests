@@ -3,7 +3,8 @@ import { diff,
 	pow,
 	getDayOfWeek,
 	MinPass,
-	compareBirthDates } from "./second-part";
+	compareBirthDates,
+	isRightTriangle } from "./second-part";
 
 // 1 задание
 
@@ -103,4 +104,20 @@ test('Сравнение дат рождения', () => {
 	expect(compareBirthDates("05.05.2000", "05.06.2000")).toBe("Второй пользователь моложе первого.");
 	expect(compareBirthDates("05.05.2001", "05.05.2000")).toBe("Первый пользователь моложе второго.");
 	expect(compareBirthDates("05.05.2000", "05.05.2001")).toBe("Второй пользователь моложе первого.");
+});
+
+// 7 задание
+
+describe("isRightTriangle", () => {
+	it("треугольник является прямоугольным", () => {
+		expect(isRightTriangle(3, 4, 5)).toBe(true);
+		expect(isRightTriangle(5, 12, 13)).toBe(true);
+		expect(isRightTriangle(8, 15, 17)).toBe(true);
+	});
+  
+	it("треугольник не является прямоугольным", () => {
+		expect(isRightTriangle(2, 4, 5)).toBe(false);
+		expect(isRightTriangle(5, 10, 15)).toBe(false);
+		expect(isRightTriangle(7, 8, 9)).toBe(false);
+	});
 });
