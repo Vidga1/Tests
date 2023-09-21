@@ -7,7 +7,8 @@
     "test": "jest --coverage",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/Vidga1/Tests#readme",
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
