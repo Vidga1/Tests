@@ -1,6 +1,7 @@
 import { diff,
 	isWord,
-	pow } from "./second-part";
+	pow,
+	getDayOfWeek } from "./second-part";
 
 // 1 задание
 
@@ -55,5 +56,22 @@ describe('pow', () => {
   
 	test('Проверка возведения числа в нулевую степень', () => {
 		expect(pow(2, 0)).toBe(1);
+	});
+});
+
+// 4 задание
+
+describe('getDayOfWeek', () => {
+	beforeEach(() => {
+		window.prompt = jest.fn().mockReturnValue('01.01.2022');
+	});
+  
+	afterEach(() => {
+		jest.clearAllMocks();
+	});
+  
+	it('должен вернуть правильный день недели', () => {
+		const result = getDayOfWeek();
+		expect(result).toBe('Суббота');
 	});
 });

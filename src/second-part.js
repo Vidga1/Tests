@@ -24,3 +24,25 @@ export function isWord(str) {
 export function pow(a, x) {
 	return a**x;
 }
+
+/* 4. Запросите у пользователя дату в формате
+ДД.ММ.ГГГГ. Напишите программу, выводящую день
+недели по введённой дате. */
+
+export function getDayOfWeek() {
+	const input = prompt("Введите дату в формате ДД.ММ.ГГГГ:");
+	const [day, month, year] = input.split(".");
+  
+	const date = new Date(`${year}-${month}-${day}`);
+  
+	const daysOfWeek = [
+		"Воскресенье",
+		"Понедельник",
+		"Вторник",
+		"Среда",
+		"Четверг",
+		"Пятница",
+		"Суббота",
+	];
+	return daysOfWeek[date.getDay()];
+}
