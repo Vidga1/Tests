@@ -92,3 +92,17 @@ export function isRightTriangle(a, b, c) {
 	} 
 	return false; 
 }
+
+/* 8. Пользователь вводит число R. Написать программу, которая выведет 
+в консоль длину окружности и площадь круга с радиусом R. */
+
+export function calculateCircleInfo(radius) {
+	const circumference = 2 * Math.PI * radius;
+	const area = Math.PI * radius * radius;
+  
+	return window.console.log(
+		`Длина окружности: ${Math.round(circumference)} Площадь круга: ${Math.round(
+			area,
+		)}`,
+	);
+}

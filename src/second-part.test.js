@@ -4,7 +4,8 @@ import { diff,
 	getDayOfWeek,
 	MinPass,
 	compareBirthDates,
-	isRightTriangle } from "./second-part";
+	isRightTriangle,
+	calculateCircleInfo } from "./second-part";
 
 // 1 задание
 
@@ -119,5 +120,17 @@ describe("isRightTriangle", () => {
 		expect(isRightTriangle(2, 4, 5)).toBe(false);
 		expect(isRightTriangle(5, 10, 15)).toBe(false);
 		expect(isRightTriangle(7, 8, 9)).toBe(false);
+	});
+});
+
+// 8 задание
+
+describe("calculateCircleInfo", () => {
+	it("рассчитать правильную информацию о круге", () => {
+		const spy = jest.spyOn(console, "log");
+		calculateCircleInfo(5);
+  
+		expect(spy).toHaveBeenCalledWith("Длина окружности: 31 Площадь круга: 79");
+		spy.mockRestore();
 	});
 });
