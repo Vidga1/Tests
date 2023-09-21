@@ -17,3 +17,10 @@ export function isWord(str) {
 	} 
 	return true;
 }
+
+/* 3. Напишите функцию pow(a, x), которая вернёт
+значение числа a, возведённого в степень x. */
+
+export function pow(a, x) {
+	return a**x;
+}
