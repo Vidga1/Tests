@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695312121793" clover="3.2.0">
-  <project timestamp="1695312121793" name="All files">
-    <metrics statements="28" coveredstatements="28" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="35" coveredelements="35" complexity="0" loc="28" ncloc="28" packages="1" files="1" classes="1"/>
+<coverage generated="1695314291090" clover="3.2.0">
+  <project timestamp="1695314291090" name="All files">
+    <metrics statements="39" coveredstatements="39" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2" elements="48" coveredelements="48" complexity="0" loc="39" ncloc="39" packages="1" files="2" classes="2"/>
     <file name="dom.js" path="C:\Users\Loki\Desktop\OTUS\Repositories\Tests\src\dom.js">
       <metrics statements="28" coveredstatements="28" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -32,6 +32,20 @@
       <line num="26" count="7" type="stmt"/>
       <line num="27" count="4" type="stmt"/>
       <line num="28" count="4" type="stmt"/>
+    </file>
+    <file name="first-part.js" path="C:\Users\Loki\Desktop\OTUS\Repositories\Tests\src\first-part.js">
+      <metrics statements="11" coveredstatements="11" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
