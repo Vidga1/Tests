@@ -165,3 +165,12 @@ export function createAdminUser() {
 	admin.role = "admin";
 	return admin;
 }
+
+/* 12. Записать все значения полей объекта admin в
+отдельные переменные. Имена переменных
+должны совпадать с названиями полей. */
+
+export function printAdminDetails(admin) {
+	const { name: adminName, age: adminAge, role: adminRole } = admin;
+	window.console.log(adminName, adminAge, adminRole);
+}

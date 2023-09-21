@@ -8,7 +8,8 @@ import { multiplyAndSum,
 	printMultiplicationTable,
 	sumOddNumbers,
 	getUserAge,
-	createAdminUser } from "./first-part";
+	createAdminUser,
+	printAdminDetails } from "./first-part";
 
 // 1 задание
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
@@ -241,4 +242,28 @@ test('получение возраста пользователя', () => {
 test('создание администратора', () => {
 	const admin = createAdminUser();
 	expect(admin.role).toBe('admin');
+});
+
+// 12 задание
+
+describe("printAdminDetails", () => {
+	let consoleSpy;
+  
+	beforeEach(() => {
+		consoleSpy = jest.spyOn(console, "log").mockImplementation();
+	});
+  
+	afterEach(() => {
+		consoleSpy.mockRestore();
+	});
+  
+	test("вывести данные администратора", () => {
+		const admin = {
+			name: "John Doe",
+			age: 30,
+			role: "admin"
+		};
+		printAdminDetails(admin);
+		expect(consoleSpy).toHaveBeenCalledWith("John Doe", 30, "admin");
+	});
 });
