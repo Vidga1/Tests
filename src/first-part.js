@@ -154,3 +154,14 @@ export function getUserAge() {
   
 	return user.age;
 }
+
+/* 11 Создать копию объекта user с именем admin.
+Добавить новому объекту поле role со значением
+'admin'. */
+
+export function createAdminUser() {
+	const user = {}
+	const admin = { ...user};
+	admin.role = "admin";
+	return admin;
+}

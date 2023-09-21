@@ -7,7 +7,8 @@ import { multiplyAndSum,
 	calculateSum,
 	printMultiplicationTable,
 	sumOddNumbers,
-	getUserAge } from "./first-part";
+	getUserAge,
+	createAdminUser } from "./first-part";
 
 // 1 задание
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
@@ -233,4 +234,11 @@ test('получение возраста пользователя', () => {
 	const promptSpy = jest.spyOn(window, 'prompt').mockImplementation(() => "25");
 	expect(getUserAge()).toBe(25);
 	expect(promptSpy).toHaveBeenCalledWith("Введите число");
+});
+
+// 11 задание
+
+test('создание администратора', () => {
+	const admin = createAdminUser();
+	expect(admin.role).toBe('admin');
 });
