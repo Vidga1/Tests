@@ -119,3 +119,10 @@ export function calculateSum() {
 	}
 	window.console.log(sum);
 }
+
+// 8. Вывести в консоль таблицу умножения на 7
+export function printMultiplicationTable() {
+	for (let i = 1; i <= 10; i++) {
+		window.console.log(`${i  } x 7 = ${  i * 7}`);
+	}
+}
