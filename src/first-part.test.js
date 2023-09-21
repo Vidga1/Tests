@@ -6,7 +6,8 @@ import { multiplyAndSum,
 	checkCircleInSquare,
 	calculateSum,
 	printMultiplicationTable,
-	sumOddNumbers } from "./first-part";
+	sumOddNumbers,
+	getUserAge } from "./first-part";
 
 // 1 задание
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
@@ -224,4 +225,12 @@ test("сумма нечетных чисел", () => {
 	expect(consoleLogSpy).toHaveBeenCalledWith(
 		"Сумма всех нечётных чисел от 1 до 12 равна 36",
 	);
+});
+
+// 10 задание
+
+test('получение возраста пользователя', () => {
+	const promptSpy = jest.spyOn(window, 'prompt').mockImplementation(() => "25");
+	expect(getUserAge()).toBe(25);
+	expect(promptSpy).toHaveBeenCalledWith("Введите число");
 });

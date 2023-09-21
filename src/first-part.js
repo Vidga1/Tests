@@ -143,3 +143,14 @@ export function sumOddNumbers() {
   
 	window.console.log(`Сумма всех нечётных чисел от 1 до ${n} равна ${sum}`);
 }
+
+/* 10. Запросить у пользователя ввод числа. Записать
+введенное значение в поле age объекта user */
+
+export function getUserAge() {
+	const user = {};
+	// eslint-disable-next-line no-alert
+	user.age = +prompt("Введите число");
+  
+	return user.age;
+}
