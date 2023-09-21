@@ -1,5 +1,6 @@
 import { multiplyAndSum,
-	countTotalCharacters } from "./first-part";
+	countTotalCharacters,
+	sumOfDigits } from "./first-part";
 
 // 1 задание
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
@@ -20,4 +21,33 @@ test('countTotalCharacters должен вывести верное количе
   
 	expect(consoleSpy).toHaveBeenCalledWith('Total Characters:', 10);
   
+});
+
+// 3 задание
+
+describe("sumOfDigits", () => {
+	it("необходимо вычислить сумму цифр трехзначного числа", () => {
+     
+		const mockPrompt = jest.spyOn(window, "prompt").mockReturnValueOnce("123");
+		const mockConsoleLog = jest.spyOn(console, "log");
+  
+		sumOfDigits();
+  
+		expect(mockPrompt).toHaveBeenCalledTimes(1);
+		expect(mockConsoleLog).toHaveBeenCalledWith(
+			"Сумма цифр введенного числа:",
+			6,
+		);
+	});
+  
+	it("если ввод не является трехзначным числом", () => {
+  
+		const mockPrompt = jest.spyOn(window, "prompt").mockReturnValueOnce("12");
+		const mockConsoleLog = jest.spyOn(console, "log");
+  
+		sumOfDigits();
+  
+		expect(mockPrompt).toHaveBeenCalledTimes(1);
+		expect(mockConsoleLog).toHaveBeenCalledWith("Вы ввели неверное число!");
+	});
 });
