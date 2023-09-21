@@ -106,3 +106,21 @@ export function calculateCircleInfo(radius) {
 		)}`,
 	);
 }
+
+/* 9. Пользователь вводит числа a, b и c. Написать
+  программу, выводящую корни квадратного
+  уравнения с коэффициентами a, b и c. */
+
+export function findDicriminant(a, b, c) {
+	const discriminant = b * b - 4 * a * c;
+	if (discriminant > 0) {
+		const x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+		const x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+		window.console.log(`Корни квадратного уравнения: x1 = ${x1}, x2 = ${x2}`);
+	} else if (discriminant === 0) {
+		const x = -b / (2 * a);
+		window.console.log(`Корень квадратного уравнения: x = ${x}`);
+	} else {
+		window.console.log(`Уравнение не имеет действительных корней`);
+	}
+}
