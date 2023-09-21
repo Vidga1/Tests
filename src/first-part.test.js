@@ -9,7 +9,8 @@ import { multiplyAndSum,
 	sumOddNumbers,
 	getUserAge,
 	createAdminUser,
-	printAdminDetails } from "./first-part";
+	printAdminDetails, 
+	ArraySum} from "./first-part";
 
 // 1 задание
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
@@ -266,4 +267,12 @@ describe("printAdminDetails", () => {
 		printAdminDetails(admin);
 		expect(consoleSpy).toHaveBeenCalledWith("John Doe", 30, "admin");
 	});
+});
+
+// 13 задание
+
+test('сумма всех элементов массива равна 55', () => {
+	const consoleLogSpy = jest.spyOn(console, 'log');
+	ArraySum();
+	expect(consoleLogSpy).toHaveBeenCalledWith(55);
 });
