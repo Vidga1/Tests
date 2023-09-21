@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695318765375" clover="3.2.0">
-  <project timestamp="1695318765375" name="All files">
-    <metrics statements="204" coveredstatements="204" conditionals="38" coveredconditionals="38" methods="13" coveredmethods="13" elements="255" coveredelements="255" complexity="0" loc="204" ncloc="204" packages="1" files="2" classes="2"/>
+<coverage generated="1695319100087" clover="3.2.0">
+  <project timestamp="1695319100087" name="All files">
+    <metrics statements="216" coveredstatements="216" conditionals="40" coveredconditionals="40" methods="14" coveredmethods="14" elements="270" coveredelements="270" complexity="0" loc="216" ncloc="216" packages="1" files="2" classes="2"/>
     <file name="dom.js" path="C:\Users\Loki\Desktop\OTUS\Repositories\Tests\src\dom.js">
       <metrics statements="28" coveredstatements="28" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -34,7 +34,7 @@
       <line num="28" count="4" type="stmt"/>
     </file>
     <file name="first-part.js" path="C:\Users\Loki\Desktop\OTUS\Repositories\Tests\src\first-part.js">
-      <metrics statements="176" coveredstatements="176" conditionals="32" coveredconditionals="32" methods="12" coveredmethods="12"/>
+      <metrics statements="188" coveredstatements="188" conditionals="34" coveredconditionals="34" methods="13" coveredmethods="13"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
@@ -211,6 +211,18 @@
       <line num="174" count="1" type="stmt"/>
       <line num="175" count="1" type="stmt"/>
       <line num="176" count="1" type="stmt"/>
+      <line num="177" count="1" type="stmt"/>
+      <line num="178" count="1" type="stmt"/>
+      <line num="179" count="1" type="stmt"/>
+      <line num="180" count="1" type="stmt"/>
+      <line num="181" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="182" count="1" type="stmt"/>
+      <line num="183" count="1" type="stmt"/>
+      <line num="184" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="185" count="10" type="stmt"/>
+      <line num="186" count="10" type="stmt"/>
+      <line num="187" count="1" type="stmt"/>
+      <line num="188" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
