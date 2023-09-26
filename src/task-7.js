@@ -1,3 +1,4 @@
+/* Задача-7 "Работа с DOM" */
 export function initializePage() {
 	const submitButton = document.getElementById("submitButton");
 	const inputField = document.getElementById("inputField");
@@ -26,3 +27,4 @@ export function initializePage() {
 		submitButton.style.display = "none";
 	});
 }
+//
