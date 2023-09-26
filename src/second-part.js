@@ -17,9 +17,7 @@ export function pow(a, x) {
 }
 
 
-/* 4. Запросите у пользователя дату в формате
-ДД.ММ.ГГГГ. Напишите программу, выводящую день
-недели по введённой дате. */
+/* Задача 8 "Работа с датами" */
 
 export function getDayOfWeek() {
 	const input = prompt("Введите дату в формате ДД.ММ.ГГГГ:");
@@ -39,10 +37,6 @@ export function getDayOfWeek() {
 	return daysOfWeek[date.getDay()];
 }
 
-/* 5. Написать программу, которая выводит в консоль
-количество минут, прошедшее с начала сегодняшнего
-дня */
-
 export function MinPass() {
 	const now = new Date();
 	const hrs = now.getHours();
@@ -50,11 +44,6 @@ export function MinPass() {
 	const minutesPassed = hrs * 60 + mins;
 	return minutesPassed
 }
-
-/* 6. В двух переменных хранятся даты рождения двух
-пользователей в формате ДД.ММ.ГГГГ. Написать
-программу, которая определяет более молодого
-пользователя. */
 
 export function compareBirthDates(date1, date2) {
 	const [day1, month1, year1] = date1.split('.').map(Number);
@@ -70,6 +59,7 @@ export function compareBirthDates(date1, date2) {
 	} 
 	return "Второй пользователь моложе первого.";  
 }
+
 
 // 7. Даны длины трёх сторон треугольника. Определить, является ли треугольник прямоугольным 
 
