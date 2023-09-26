@@ -9,7 +9,7 @@ import { diff,
 	findDicriminant,
 	checkString } from "./second-part";
 
-// 1 задание
+// Задача 6 "Функции"
 
 test('testDiff', () => {
 	// Проверка разности положительных чисел
@@ -24,8 +24,6 @@ test('testDiff', () => {
 	const result3 = diff(10, -5);
 	expect(result3).toBe(15);
 });
-
-// 2 задание
 
 describe('isWord', () => {
 	test('Проверка строки без пробелов', () => {
@@ -49,8 +47,6 @@ describe('isWord', () => {
 	});
 });
 
-// 3 задание
-
 describe('pow', () => {
 	test('Проверка возведения числа в положительную степень', () => {
 		expect(pow(2, 3)).toBe(8);
@@ -64,6 +60,7 @@ describe('pow', () => {
 		expect(pow(2, 0)).toBe(1);
 	});
 });
+
 
 // 4 задание
 
