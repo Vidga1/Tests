@@ -162,7 +162,7 @@ describe("findDicriminant", () => {
 });
 
 
-// 10 задание
+/* Задача 10 "Регулярные выражения" */
 
 describe("checkString", () => {
 	test("дата", () => {
