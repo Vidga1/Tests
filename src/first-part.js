@@ -148,8 +148,7 @@ export function printAdminDetails(admin) {
 }
 
 
-/* 13 Создайте массив целых чисел из 10 элементов.
-Выведите в консоль сумму всех элементов массива. */
+// Задача 5 "Массивы"
 
 export function ArraySum() {
 	let sum = 0;
@@ -160,9 +159,6 @@ export function ArraySum() {
 	window.console.log(sum);
 }
 
-/* 14. Создайте новый массив, на основе исходного, в котором каждый элемент будет вдвое больше
- элемента исходного массива с таким же индексом. (a[1] = 3, b[1] = 6, где a – исходный массив, b – новый массив). */
-
 export function multiplyByTwo(arr) {
 	const result = [];
 	for (let i = 0; i < arr.length; i++) {
@@ -170,8 +166,6 @@ export function multiplyByTwo(arr) {
 	}
 	return result;
 }
-
-/* 15. Найдите и выведите в консоль наибольший и наименьший элемент исходного массива. */
 
 export function findMinMax(arr) {
 	let min = arr[0];

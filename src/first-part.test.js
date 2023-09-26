@@ -260,7 +260,7 @@ describe("printAdminDetails", () => {
 });
 
 
-// 13 задание
+// Задача 5 "Массивы"
 
 test('сумма всех элементов массива равна 55', () => {
 	const consoleLogSpy = jest.spyOn(console, 'log');
@@ -268,15 +268,12 @@ test('сумма всех элементов массива равна 55', () =
 	expect(consoleLogSpy).toHaveBeenCalledWith(55);
 });
 
-// 14 задание 
-
 test("умножить каждый элемент массива на 2", () => {
 	const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 	const b = multiplyByTwo(a);
 	expect(b).toEqual([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
 });
 
-// 15 задание
 test('вывод минимума и максимума из 10 чисел', () => {
 	const consoleLogSpy = jest.spyOn(console, 'log');
 	const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
