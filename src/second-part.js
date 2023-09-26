@@ -61,7 +61,7 @@ export function compareBirthDates(date1, date2) {
 }
 
 
-// 7. Даны длины трёх сторон треугольника. Определить, является ли треугольник прямоугольным 
+// Задача 9 "Математические операции"
 
 export function isRightTriangle(a, b, c) {
 	// Проверяем теорему Пифагора: квадрат гипотенузы равен сумме квадратов катетов треугольника.
@@ -75,9 +75,6 @@ export function isRightTriangle(a, b, c) {
 	return false; 
 }
 
-/* 8. Пользователь вводит число R. Написать программу, которая выведет 
-в консоль длину окружности и площадь круга с радиусом R. */
-
 export function calculateCircleInfo(radius) {
 	const circumference = 2 * Math.PI * radius;
 	const area = Math.PI * radius * radius;
@@ -88,10 +85,6 @@ export function calculateCircleInfo(radius) {
 		)}`,
 	);
 }
-
-/* 9. Пользователь вводит числа a, b и c. Написать
-  программу, выводящую корни квадратного
-  уравнения с коэффициентами a, b и c. */
 
 export function findDicriminant(a, b, c) {
 	const discriminant = b * b - 4 * a * c;
@@ -106,6 +99,7 @@ export function findDicriminant(a, b, c) {
 		window.console.log(`Уравнение не имеет действительных корней`);
 	}
 }
+
 
 /* 10. Пользователь вводит текстовую строку. Определить с
   помощью регулярного выражения, является ли

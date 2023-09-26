@@ -104,7 +104,7 @@ test('Сравнение дат рождения', () => {
 });
 
 
-// 7 задание
+// Задача 9 "Математические операции"
 
 describe("isRightTriangle", () => {
 	it("треугольник является прямоугольным", () => {
@@ -120,8 +120,6 @@ describe("isRightTriangle", () => {
 	});
 });
 
-// 8 задание
-
 describe("calculateCircleInfo", () => {
 	it("рассчитать правильную информацию о круге", () => {
 		const spy = jest.spyOn(console, "log");
@@ -131,8 +129,6 @@ describe("calculateCircleInfo", () => {
 		spy.mockRestore();
 	});
 });
-
-// 9 задание 
 
 describe("findDicriminant", () => {
 	beforeEach(() => {
@@ -164,6 +160,7 @@ describe("findDicriminant", () => {
 		);
 	});
 });
+
 
 // 10 задание
 
