@@ -13,13 +13,6 @@ const config = {
 			statements: -10,
 		}
 	}, 
-	reporters: [
-		'default',
-		['jest-junit', {
-			outputDirectory: './coverage',
-			outputName: 'junit.xml',
-		}],
-	],
 };
 
 module.exports = config;

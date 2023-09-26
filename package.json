@@ -8,8 +8,7 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "prepare": "husky install",
-    "deploy": "gh-pages -d build",
-    "report-coverage": "codecov"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
