@@ -191,15 +191,13 @@ test('Круг не поместится в квадрате', () => {
 });
 
 
-// 7 задание
+// Задача 3 "Циклы"
 
 test('сумма чисел от 50 до 100 равна 3825', () => {
 	const consoleLogSpy = jest.spyOn(console, 'log');
 	calculateSum();
 	expect(consoleLogSpy).toHaveBeenCalledWith(3825);
 });
-
-// 8 задание
 
 test('таблица умножения на 7', () => {
 	const consoleLogSpy = jest.spyOn(console, 'log');
@@ -216,8 +214,6 @@ test('таблица умножения на 7', () => {
 	expect(consoleLogSpy).toHaveBeenCalledWith("10 x 7 = 70");
 });
 
-// 9 задание
-
 test("сумма нечетных чисел", () => {
 	window.prompt = jest.fn().mockReturnValueOnce("12")
 	const consoleLogSpy = jest.spyOn(console, "log");
@@ -226,6 +222,7 @@ test("сумма нечетных чисел", () => {
 		"Сумма всех нечётных чисел от 1 до 12 равна 36",
 	);
 });
+
 
 // 10 задание
 

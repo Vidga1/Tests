@@ -95,8 +95,8 @@ export function checkCircleInSquare(circle, square) {
     
 };
 
+// Задача 3 "Циклы"
 
-// 7. Вывести в консоль сумму всех целых чисел от 50 до 100 
 export function calculateSum() {
 	let sum = 0;
 	for (let i = 50; i <= 100; i++) {
@@ -105,15 +105,11 @@ export function calculateSum() {
 	window.console.log(sum);
 }
 
-// 8. Вывести в консоль таблицу умножения на 7
 export function printMultiplicationTable() {
 	for (let i = 1; i <= 10; i++) {
 		window.console.log(`${i  } x 7 = ${  i * 7}`);
 	}
 }
-
-/* 9. «Запросить у пользователя ввод числа N.
- Вывести в консоль сумму всех нечётных чисел от 1 до N» */
 
 export function sumOddNumbers() {
 	// eslint-disable-next-line no-alert
@@ -128,6 +124,7 @@ export function sumOddNumbers() {
   
 	window.console.log(`Сумма всех нечётных чисел от 1 до ${n} равна ${sum}`);
 }
+
 
 /* 10. Запросить у пользователя ввод числа. Записать
 введенное значение в поле age объекта user */
