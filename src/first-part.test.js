@@ -224,7 +224,7 @@ test("сумма нечетных чисел", () => {
 });
 
 
-// 10 задание
+// Задача 4 "Объекты"
 
 test('получение возраста пользователя', () => {
 	const promptSpy = jest.spyOn(window, 'prompt').mockImplementation(() => "25");
@@ -232,14 +232,10 @@ test('получение возраста пользователя', () => {
 	expect(promptSpy).toHaveBeenCalledWith("Введите число");
 });
 
-// 11 задание
-
 test('создание администратора', () => {
 	const admin = createAdminUser();
 	expect(admin.role).toBe('admin');
 });
-
-// 12 задание
 
 describe("printAdminDetails", () => {
 	let consoleSpy;
@@ -262,6 +258,7 @@ describe("printAdminDetails", () => {
 		expect(consoleSpy).toHaveBeenCalledWith("John Doe", 30, "admin");
 	});
 });
+
 
 // 13 задание
 

@@ -125,9 +125,7 @@ export function sumOddNumbers() {
 	window.console.log(`Сумма всех нечётных чисел от 1 до ${n} равна ${sum}`);
 }
 
-
-/* 10. Запросить у пользователя ввод числа. Записать
-введенное значение в поле age объекта user */
+// Задача 4 "Объекты"
 
 export function getUserAge() {
 	const user = {};
@@ -137,10 +135,6 @@ export function getUserAge() {
 	return user.age;
 }
 
-/* 11 Создать копию объекта user с именем admin.
-Добавить новому объекту поле role со значением
-'admin'. */
-
 export function createAdminUser() {
 	const user = {}
 	const admin = { ...user};
@@ -148,14 +142,11 @@ export function createAdminUser() {
 	return admin;
 }
 
-/* 12. Записать все значения полей объекта admin в
-отдельные переменные. Имена переменных
-должны совпадать с названиями полей. */
-
 export function printAdminDetails(admin) {
 	const { name: adminName, age: adminAge, role: adminRole } = admin;
 	window.console.log(adminName, adminAge, adminRole);
 }
+
 
 /* 13 Создайте массив целых чисел из 10 элементов.
 Выведите в консоль сумму всех элементов массива. */
