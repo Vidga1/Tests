@@ -61,8 +61,8 @@ describe("sumOfDigits", () => {
 	});
 });
 
+// 2 задача "Условия"
 
-// 4 задание
 describe('findMax', () => {
 	it('если первое число больше второго числа', () => {
 		const mockConsoleLog = jest.spyOn(console, 'log');
@@ -75,8 +75,6 @@ describe('findMax', () => {
 		expect(mockConsoleLog).toHaveBeenCalledWith(4);
 	});
 });
-
-// 5 задание
 
 describe("getMonthName", () => {
 	it("должен возвращать правильное название месяца", () => {
@@ -184,8 +182,6 @@ describe("getMonthName", () => {
 	});
 });
 
-// 6 задание
-
 test('Круг поместится в квадрате', () => {
 	expect(checkCircleInSquare(10, 20)).toBe("Круг поместится в квадрате");
 });
@@ -193,6 +189,7 @@ test('Круг поместится в квадрате', () => {
 test('Круг не поместится в квадрате', () => {
 	expect(checkCircleInSquare(30, 20)).toBe("Круг не поместится в квадрате");
 });
+
 
 // 7 задание
 

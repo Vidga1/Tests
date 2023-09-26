@@ -32,8 +32,7 @@ export function sumOfDigits() {
 }
 
 
-/* 4. В переменных a и b хранятся числа. Вывести в
-консоль наибольшее из них. */
+// 2 задача "Условия" 
 
 export function findMax(a, b) {
 	if (a > b) {
@@ -43,9 +42,6 @@ export function findMax(a, b) {
 	}
 }
 
-/* 5. Запросить у пользователя ввод числа от 1 до 12.
-Вывести в консоль название месяца, соответствующее этому 
-числу (1 — январь, 2 — февраль и т.д.). */
 export function getMonthName() {
 	const monthNumber = Number(prompt("Введите число от 1 до 12:"));
 	switch (monthNumber) {
@@ -91,9 +87,6 @@ export function getMonthName() {
 	}
 }
 
-/* 6. В переменных circle и square хранятся площади круга и квадрата соответственно.
-  Написать программу, которая определяет, поместится ли круг в квадрат. */
-
 export function checkCircleInSquare(circle, square) {
 	if (circle <= square) {
 		return "Круг поместится в квадрате";
@@ -101,6 +94,7 @@ export function checkCircleInSquare(circle, square) {
 	return "Круг не поместится в квадрате";
     
 };
+
 
 // 7. Вывести в консоль сумму всех целых чисел от 50 до 100 
 export function calculateSum() {
