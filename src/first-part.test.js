@@ -14,7 +14,7 @@ import { multiplyAndSum,
 	multiplyByTwo,
 	findMinMax} from "./first-part";
 
-// 1 задание
+// 1 задача "Линейные алгоритмы"
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
 	const consoleSpy = jest.spyOn(console, "log");
   
@@ -25,7 +25,6 @@ test("multiplyAndSum должен вывести верную сумму и пр
   
 });
 
-// 2 задание
 test('countTotalCharacters должен вывести верное количество символов строки', () => {
 	const consoleSpy = jest.spyOn(console, 'log');
   
@@ -34,8 +33,6 @@ test('countTotalCharacters должен вывести верное количе
 	expect(consoleSpy).toHaveBeenCalledWith('Total Characters:', 10);
   
 });
-
-// 3 задание
 
 describe("sumOfDigits", () => {
 	it("необходимо вычислить сумму цифр трехзначного числа", () => {
@@ -63,6 +60,7 @@ describe("sumOfDigits", () => {
 		expect(mockConsoleLog).toHaveBeenCalledWith("Вы ввели неверное число!");
 	});
 });
+
 
 // 4 задание
 describe('findMax', () => {

@@ -1,6 +1,4 @@
-/* 1.В переменных a и b хранятся числа. Написать          
-программу, которая выводит в консоль произведение
-и сумму этих чисел. */
+/* 1 задача "Линейные алгоритмы" */
 
 export function multiplyAndSum(a, b) {
 	const product = a * b;
@@ -10,18 +8,10 @@ export function multiplyAndSum(a, b) {
 	window.console.log("Sum:", sum);
 }
 
-/* 2. В двух переменных хранятся строки символов.
-Написать программу, которая выведет в консоль
-суммарное количество символов в обоих строках */
-
 export function countTotalCharacters(str1, str2) {
 	const totalCharacters = str1.length + str2.length;
 	window.console.log("Total Characters:", totalCharacters);
 }
-
-/* 3. Написать программу, которая запрашивает у
-пользователя ввод трёхзначного числа, а потом
-выводит в консоль сумму цифр введённого числа */
 
 export function sumOfDigits() {
 	// eslint-disable-next-line no-alert
@@ -40,6 +30,7 @@ export function sumOfDigits() {
   
 	window.console.log("Сумма цифр введенного числа:", sum);
 }
+
 
 /* 4. В переменных a и b хранятся числа. Вывести в
 консоль наибольшее из них. */
