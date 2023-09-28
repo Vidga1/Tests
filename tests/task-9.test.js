@@ -1,5 +1,6 @@
 import { isRightTriangle,
-	calculateCircleInfo } from "../src/task-9"
+	calculateCircleInfo,
+	findDicriminant } from "../src/task-9"
 
 describe("isRightTriangle", () => {
 	it("треугольник является прямоугольным", () => {
@@ -22,5 +23,36 @@ describe("calculateCircleInfo", () => {
   
 		expect(spy).toHaveBeenCalledWith("Длина окружности: 31 Площадь круга: 79");
 		spy.mockRestore();
+	});
+});
+
+describe("findDicriminant", () => {
+	beforeEach(() => {
+		jest.spyOn(console, "log").mockImplementation(() => {});
+	});
+  
+	afterEach(() => {
+		window.console.log.mockRestore();
+	});
+  
+	test("Dicriminant > 0", () => {
+		findDicriminant(1, -3, 2);
+		expect(window.console.log).toHaveBeenCalledWith(
+			"Корни квадратного уравнения: x1 = 2, x2 = 1",
+		);
+	});
+  
+	test("Dicriminant = 0", () => {
+		findDicriminant(1, -4, 4);
+		expect(window.console.log).toHaveBeenCalledWith(
+			"Корень квадратного уравнения: x = 2",
+		);
+	});
+  
+	test("Dicriminant < 0", () => {
+		findDicriminant(1, 2, 3);
+		expect(window.console.log).toHaveBeenCalledWith(
+			"Уравнение не имеет действительных корней",
+		);
 	});
 });
