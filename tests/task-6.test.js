@@ -1,4 +1,5 @@
-import { diff } from "../src/task-6"
+import { diff,
+	isWord } from "../src/task-6"
 
 test('testDiff', () => {
 	// Проверка разности положительных чисел
@@ -12,4 +13,26 @@ test('testDiff', () => {
 	// Проверка разности положительного и отрицательного чисел
 	const result3 = diff(10, -5);
 	expect(result3).toBe(15);
+});
+
+describe('isWord', () => {
+	test('Проверка строки без пробелов', () => {
+		expect(isWord("hello")).toBe(true);
+	});
+  
+	test('Проверка строки с пробелами', () => {
+		expect(isWord("hello world")).toBe(false);
+	});
+  
+	test('Проверка пустой строки', () => {
+		expect(isWord("")).toBe(true);
+	});
+  
+	test('Проверка строки с одним пробелом', () => {
+		expect(isWord(" ")).toBe(false);
+	});
+  
+	test('Проверка строки с несколькими пробелами', () => {
+		expect(isWord("   ")).toBe(false);
+	});
 });
