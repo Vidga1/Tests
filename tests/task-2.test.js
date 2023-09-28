@@ -1,5 +1,6 @@
 import { findMax,
-	getMonthName } from "../src/task-2"
+	getMonthName,
+	checkCircleInSquare } from "../src/task-2"
 
 describe('findMax', () => {
 	it('если первое число больше второго числа', () => {
@@ -118,4 +119,12 @@ describe("getMonthName", () => {
 		getMonthName();
 		expect(consoleSpy).toHaveBeenCalledWith("Некорректное число");
 	});
+});
+
+test('Круг поместится в квадрате', () => {
+	expect(checkCircleInSquare(10, 20)).toBe("Круг поместится в квадрате");
+});
+  
+test('Круг не поместится в квадрате', () => {
+	expect(checkCircleInSquare(30, 20)).toBe("Круг не поместится в квадрате");
 });

@@ -50,3 +50,11 @@ export function getMonthName() {
 		break;
 	}
 }
+
+export function checkCircleInSquare(circle, square) {
+	if (circle <= square) {
+		return "Круг поместится в квадрате";
+	} 
+	return "Круг не поместится в квадрате";
+    
+};
