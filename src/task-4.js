@@ -5,3 +5,10 @@ export function getUserAge() {
   
 	return user.age;
 }
+
+export function createAdminUser() {
+	const user = {}
+	const admin = { ...user};
+	admin.role = "admin";
+	return admin;
+}
