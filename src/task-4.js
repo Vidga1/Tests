@@ -12,3 +12,8 @@ export function createAdminUser() {
 	admin.role = "admin";
 	return admin;
 }
+
+export function printAdminDetails(admin) {
+	const { name: adminName, age: adminAge, role: adminRole } = admin;
+	window.console.log(adminName, adminAge, adminRole);
+}
