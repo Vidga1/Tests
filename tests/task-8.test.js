@@ -1,5 +1,6 @@
 import { getDayOfWeek,
-	MinPass } from "../src/task-8"
+	MinPass,
+	compareBirthDates } from "../src/task-8"
 
 describe('getDayOfWeek', () => {
 	beforeEach(() => {
@@ -28,4 +29,14 @@ test('прошло минут с начала дня', () => {
     
 	// Вызываем функцию и проверяем результат
 	expect(MinPass()).toBe(expectedMinutesPassed);
+});
+
+test('Сравнение дат рождения', () => {
+	expect(compareBirthDates("05.05.2000", "05.05.2000")).toBe("Оба пользователя родились в одинаковый день.");
+	expect(compareBirthDates("06.05.2000", "05.05.2000")).toBe("Первый пользователь моложе второго.");
+	expect(compareBirthDates("04.05.2000", "05.05.2000")).toBe("Второй пользователь моложе первого.");
+	expect(compareBirthDates("05.06.2000", "05.05.2000")).toBe("Первый пользователь моложе второго.");
+	expect(compareBirthDates("05.05.2000", "05.06.2000")).toBe("Второй пользователь моложе первого.");
+	expect(compareBirthDates("05.05.2001", "05.05.2000")).toBe("Первый пользователь моложе второго.");
+	expect(compareBirthDates("05.05.2000", "05.05.2001")).toBe("Второй пользователь моложе первого.");
 });
