@@ -9,3 +9,7 @@ export function isWord(str) {
 	} 
 	return true;
 }
+
+export function pow(a, x) {
+	return a**x;
+}
