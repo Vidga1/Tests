@@ -6,3 +6,11 @@ export function ArraySum() {
 	}
 	window.console.log(sum);
 }
+
+export function multiplyByTwo(arr) {
+	const result = [];
+	for (let i = 0; i < arr.length; i++) {
+		result[i] = arr[i] * 2;
+	}
+	return result;
+}
