@@ -1,5 +1,6 @@
 import { calculateSum,
-	printMultiplicationTable } from "../src/task-3"
+	printMultiplicationTable,
+	sumOddNumbers } from "../src/task-3"
 
 test('сумма чисел от 50 до 100 равна 3825', () => {
 	const consoleLogSpy = jest.spyOn(console, 'log');
@@ -20,4 +21,13 @@ test('таблица умножения на 7', () => {
 	expect(consoleLogSpy).toHaveBeenCalledWith("8 x 7 = 56");
 	expect(consoleLogSpy).toHaveBeenCalledWith("9 x 7 = 63");
 	expect(consoleLogSpy).toHaveBeenCalledWith("10 x 7 = 70");
+});
+
+test("сумма нечетных чисел", () => {
+	window.prompt = jest.fn().mockReturnValueOnce("12")
+	const consoleLogSpy = jest.spyOn(console, "log");
+	sumOddNumbers();
+	expect(consoleLogSpy).toHaveBeenCalledWith(
+		"Сумма всех нечётных чисел от 1 до 12 равна 36",
+	);
 });
