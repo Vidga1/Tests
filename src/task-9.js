@@ -10,3 +10,14 @@ export function isRightTriangle(a, b, c) {
 	return false;
     
 }
+
+export function calculateCircleInfo(radius) {
+	const circumference = 2 * Math.PI * radius;
+	const area = Math.PI * radius * radius;
+  
+	return window.console.log(
+		`Длина окружности: ${Math.round(circumference)} Площадь круга: ${Math.round(
+			area,
+		)}`,
+	);
+}
