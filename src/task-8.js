@@ -15,3 +15,11 @@ export function getDayOfWeek() {
 	];
 	return daysOfWeek[date.getDay()];
 }
+
+export function MinPass() {
+	const now = new Date();
+	const hrs = now.getHours();
+	const mins = now.getMinutes();
+	const minutesPassed = hrs * 60 + mins;
+	return minutesPassed
+}
