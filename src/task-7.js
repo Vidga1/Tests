@@ -1,8 +1,4 @@
-/* Задача-7 "Работа с DOM" */
-export function initializePage() {
-	const submitButton = document.getElementById("submitButton");
-	const inputField = document.getElementById("inputField");
-  
+export function initializePage(submitButton, inputField) {
 	submitButton.style.display = "none";
   
 	inputField.addEventListener("input", () => {
@@ -27,4 +23,3 @@ export function initializePage() {
 		submitButton.style.display = "none";
 	});
 }
-//
