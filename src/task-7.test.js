@@ -1,9 +1,10 @@
-import { initializePage } from './dom';
+/* Задача-7 "Работа с DOM" */
+import { initializePage } from './task-7';
 
 const fs = require('fs');
 const path = require('path');
 
-const html = fs.readFileSync(path.resolve(__dirname, './dom.html'), 'utf8');
+const html = fs.readFileSync(path.resolve(__dirname, './task-7.html'), 'utf8');
 
 describe('Page', () => {
 	beforeEach(() => {
@@ -64,3 +65,4 @@ describe('Page', () => {
 		expect(paragraphs[0].textContent).toBe('Test 2');
 	});
 });
+//

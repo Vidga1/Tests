@@ -1,14 +1,8 @@
-/* 1.Напишите функцию diff, которая получает в качестве
-параметров 2 числа и возвращает разницу между
-наибольшим и наименьшим. */
+// Задача 6 "Функции"
 
 export function diff(a, b) {
 	return Math.abs(a - b);
 }
-
-/* 2. Напишите функцию isWord, которая принимает на
-  вход текстовую строку. Функция возвращает true, если строка состоит 
-  из одного слова и false, если из нескольких.  */
 
 export function isWord(str) {
 	// Проверяем, есть ли в строке пробелы
@@ -18,16 +12,12 @@ export function isWord(str) {
 	return true;
 }
 
-/* 3. Напишите функцию pow(a, x), которая вернёт
-значение числа a, возведённого в степень x. */
-
 export function pow(a, x) {
 	return a**x;
 }
 
-/* 4. Запросите у пользователя дату в формате
-ДД.ММ.ГГГГ. Напишите программу, выводящую день
-недели по введённой дате. */
+
+/* Задача 8 "Работа с датами" */
 
 export function getDayOfWeek() {
 	const input = prompt("Введите дату в формате ДД.ММ.ГГГГ:");
@@ -47,10 +37,6 @@ export function getDayOfWeek() {
 	return daysOfWeek[date.getDay()];
 }
 
-/* 5. Написать программу, которая выводит в консоль
-количество минут, прошедшее с начала сегодняшнего
-дня */
-
 export function MinPass() {
 	const now = new Date();
 	const hrs = now.getHours();
@@ -58,11 +44,6 @@ export function MinPass() {
 	const minutesPassed = hrs * 60 + mins;
 	return minutesPassed
 }
-
-/* 6. В двух переменных хранятся даты рождения двух
-пользователей в формате ДД.ММ.ГГГГ. Написать
-программу, которая определяет более молодого
-пользователя. */
 
 export function compareBirthDates(date1, date2) {
 	const [day1, month1, year1] = date1.split('.').map(Number);
@@ -79,7 +60,8 @@ export function compareBirthDates(date1, date2) {
 	return "Второй пользователь моложе первого.";  
 }
 
-// 7. Даны длины трёх сторон треугольника. Определить, является ли треугольник прямоугольным 
+
+// Задача 9 "Математические операции"
 
 export function isRightTriangle(a, b, c) {
 	// Проверяем теорему Пифагора: квадрат гипотенузы равен сумме квадратов катетов треугольника.
@@ -93,9 +75,6 @@ export function isRightTriangle(a, b, c) {
 	return false; 
 }
 
-/* 8. Пользователь вводит число R. Написать программу, которая выведет 
-в консоль длину окружности и площадь круга с радиусом R. */
-
 export function calculateCircleInfo(radius) {
 	const circumference = 2 * Math.PI * radius;
 	const area = Math.PI * radius * radius;
@@ -106,10 +85,6 @@ export function calculateCircleInfo(radius) {
 		)}`,
 	);
 }
-
-/* 9. Пользователь вводит числа a, b и c. Написать
-  программу, выводящую корни квадратного
-  уравнения с коэффициентами a, b и c. */
 
 export function findDicriminant(a, b, c) {
 	const discriminant = b * b - 4 * a * c;
@@ -125,12 +100,8 @@ export function findDicriminant(a, b, c) {
 	}
 }
 
-/* 10. Пользователь вводит текстовую строку. Определить с
-  помощью регулярного выражения, является ли
-  введённая строка:
-  1.Датой.
-  2.Адресом электронной почты.
-  3.*Номером телефона. */
+
+/* Задача 10 "Регулярные выражения" */
 
 export function checkString(input) {
 	const regex =

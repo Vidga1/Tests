@@ -9,7 +9,7 @@ import { diff,
 	findDicriminant,
 	checkString } from "./second-part";
 
-// 1 задание
+// Задача 6 "Функции"
 
 test('testDiff', () => {
 	// Проверка разности положительных чисел
@@ -24,8 +24,6 @@ test('testDiff', () => {
 	const result3 = diff(10, -5);
 	expect(result3).toBe(15);
 });
-
-// 2 задание
 
 describe('isWord', () => {
 	test('Проверка строки без пробелов', () => {
@@ -49,8 +47,6 @@ describe('isWord', () => {
 	});
 });
 
-// 3 задание
-
 describe('pow', () => {
 	test('Проверка возведения числа в положительную степень', () => {
 		expect(pow(2, 3)).toBe(8);
@@ -65,7 +61,8 @@ describe('pow', () => {
 	});
 });
 
-// 4 задание
+
+// Задача 8 "Работа с датами"
 
 describe('getDayOfWeek', () => {
 	beforeEach(() => {
@@ -82,7 +79,6 @@ describe('getDayOfWeek', () => {
 	});
 });
 
-// 5 задание
 test('прошло минут с начала дня', () => {
 	// Создаем фиктивную дату и время (10:30)
 	const now = new Date(2022, 0, 1, 10, 30);
@@ -97,8 +93,6 @@ test('прошло минут с начала дня', () => {
 	expect(MinPass()).toBe(expectedMinutesPassed);
 });
 
-// 6 задание
-
 test('Сравнение дат рождения', () => {
 	expect(compareBirthDates("05.05.2000", "05.05.2000")).toBe("Оба пользователя родились в одинаковый день.");
 	expect(compareBirthDates("06.05.2000", "05.05.2000")).toBe("Первый пользователь моложе второго.");
@@ -109,7 +103,8 @@ test('Сравнение дат рождения', () => {
 	expect(compareBirthDates("05.05.2000", "05.05.2001")).toBe("Второй пользователь моложе первого.");
 });
 
-// 7 задание
+
+// Задача 9 "Математические операции"
 
 describe("isRightTriangle", () => {
 	it("треугольник является прямоугольным", () => {
@@ -125,8 +120,6 @@ describe("isRightTriangle", () => {
 	});
 });
 
-// 8 задание
-
 describe("calculateCircleInfo", () => {
 	it("рассчитать правильную информацию о круге", () => {
 		const spy = jest.spyOn(console, "log");
@@ -136,8 +129,6 @@ describe("calculateCircleInfo", () => {
 		spy.mockRestore();
 	});
 });
-
-// 9 задание 
 
 describe("findDicriminant", () => {
 	beforeEach(() => {
@@ -170,7 +161,8 @@ describe("findDicriminant", () => {
 	});
 });
 
-// 10 задание
+
+/* Задача 10 "Регулярные выражения" */
 
 describe("checkString", () => {
 	test("дата", () => {

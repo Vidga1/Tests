@@ -14,7 +14,7 @@ import { multiplyAndSum,
 	multiplyByTwo,
 	findMinMax} from "./first-part";
 
-// 1 задание
+// 1 задача "Линейные алгоритмы"
 test("multiplyAndSum должен вывести верную сумму и произведение чисел", () => {
 	const consoleSpy = jest.spyOn(console, "log");
   
@@ -25,7 +25,6 @@ test("multiplyAndSum должен вывести верную сумму и пр
   
 });
 
-// 2 задание
 test('countTotalCharacters должен вывести верное количество символов строки', () => {
 	const consoleSpy = jest.spyOn(console, 'log');
   
@@ -34,8 +33,6 @@ test('countTotalCharacters должен вывести верное количе
 	expect(consoleSpy).toHaveBeenCalledWith('Total Characters:', 10);
   
 });
-
-// 3 задание
 
 describe("sumOfDigits", () => {
 	it("необходимо вычислить сумму цифр трехзначного числа", () => {
@@ -64,7 +61,8 @@ describe("sumOfDigits", () => {
 	});
 });
 
-// 4 задание
+// 2 задача "Условия"
+
 describe('findMax', () => {
 	it('если первое число больше второго числа', () => {
 		const mockConsoleLog = jest.spyOn(console, 'log');
@@ -77,8 +75,6 @@ describe('findMax', () => {
 		expect(mockConsoleLog).toHaveBeenCalledWith(4);
 	});
 });
-
-// 5 задание
 
 describe("getMonthName", () => {
 	it("должен возвращать правильное название месяца", () => {
@@ -186,8 +182,6 @@ describe("getMonthName", () => {
 	});
 });
 
-// 6 задание
-
 test('Круг поместится в квадрате', () => {
 	expect(checkCircleInSquare(10, 20)).toBe("Круг поместится в квадрате");
 });
@@ -196,15 +190,14 @@ test('Круг не поместится в квадрате', () => {
 	expect(checkCircleInSquare(30, 20)).toBe("Круг не поместится в квадрате");
 });
 
-// 7 задание
+
+// Задача 3 "Циклы"
 
 test('сумма чисел от 50 до 100 равна 3825', () => {
 	const consoleLogSpy = jest.spyOn(console, 'log');
 	calculateSum();
 	expect(consoleLogSpy).toHaveBeenCalledWith(3825);
 });
-
-// 8 задание
 
 test('таблица умножения на 7', () => {
 	const consoleLogSpy = jest.spyOn(console, 'log');
@@ -221,8 +214,6 @@ test('таблица умножения на 7', () => {
 	expect(consoleLogSpy).toHaveBeenCalledWith("10 x 7 = 70");
 });
 
-// 9 задание
-
 test("сумма нечетных чисел", () => {
 	window.prompt = jest.fn().mockReturnValueOnce("12")
 	const consoleLogSpy = jest.spyOn(console, "log");
@@ -232,7 +223,8 @@ test("сумма нечетных чисел", () => {
 	);
 });
 
-// 10 задание
+
+// Задача 4 "Объекты"
 
 test('получение возраста пользователя', () => {
 	const promptSpy = jest.spyOn(window, 'prompt').mockImplementation(() => "25");
@@ -240,14 +232,10 @@ test('получение возраста пользователя', () => {
 	expect(promptSpy).toHaveBeenCalledWith("Введите число");
 });
 
-// 11 задание
-
 test('создание администратора', () => {
 	const admin = createAdminUser();
 	expect(admin.role).toBe('admin');
 });
-
-// 12 задание
 
 describe("printAdminDetails", () => {
 	let consoleSpy;
@@ -271,7 +259,8 @@ describe("printAdminDetails", () => {
 	});
 });
 
-// 13 задание
+
+// Задача 5 "Массивы"
 
 test('сумма всех элементов массива равна 55', () => {
 	const consoleLogSpy = jest.spyOn(console, 'log');
@@ -279,15 +268,12 @@ test('сумма всех элементов массива равна 55', () =
 	expect(consoleLogSpy).toHaveBeenCalledWith(55);
 });
 
-// 14 задание 
-
 test("умножить каждый элемент массива на 2", () => {
 	const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 	const b = multiplyByTwo(a);
 	expect(b).toEqual([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
 });
 
-// 15 задание
 test('вывод минимума и максимума из 10 чисел', () => {
 	const consoleLogSpy = jest.spyOn(console, 'log');
 	const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
